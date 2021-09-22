@@ -1,0 +1,24 @@
+.tile-header{
+    margin-bottom: 30px;
+}
+span.title{
+    display: inline-block;
+    width: 40%;
+    font-weight: bold;
+    color: #fff;
+}
+span.value{
+    color: #000000;
+    font-weight: 600;
+}
+.tile-data {
+    cursor: pointer;
+}
+.tile-data:not(:last-child){
+    padding-bottom: 5px;
+}
+.parent-tile{
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: rgba(0, 175, 239, 1.0);
+}

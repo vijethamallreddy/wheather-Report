@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4 tile-header" *ngFor="let cityTemp of cityTemparetureObj" (click)="gotToDetails(cityTemp.name)">
+      <div class="parent-tile">
+        <div class="tile-data">
+          <span class="title">City Name</span>
+          <span class="value">{{cityTemp?.name}}</span>
+        </div>
+        <div class="tile-data">
+          <span class="title">Temperature</span>
+          <span class="value">{{cityTemp?.main?.temp}}</span>
+        </div>
+        <div class="tile-data">
+          <span class="title">Sunrise Time</span>
+          <span class="value">{{cityTemp.sys.sunrise * 1000 | date: 'yyyy/MM/dd HH:mm:ss'}}</span>
+        </div>
+        <div class="tile-data">
+          <span class="title">Sunset Time</span>
+          <span class="value">{{cityTemp?.sys?.sunset * 1000 | date: 'yyyy/MM/dd HH:mm:ss'}}</span>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.column-header{
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding:10px;
+    background-color: rgba(0, 175, 239, 1.0);
+}
+.column-data{
+    padding:10px;
+}
